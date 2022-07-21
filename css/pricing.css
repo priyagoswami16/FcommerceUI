@@ -1,0 +1,771 @@
+@import "common.css";
+
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #52bd95;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/**  Create account pricing **/
+
+.btn__primary_acc {
+  border-radius: 8px;
+  width: 50%;
+  margin: auto;
+  background: var(--teal);
+  border: 1.5px solid var(--teal);
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 0 10px;
+}
+
+.btn__primary_acc a {
+  font-size: 13px;
+  color: var(--white);
+  text-decoration: none;
+  line-height: 30px;
+  transition: all 0.5s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.btn__primary_acc .eff {
+  width: 100%;
+  height: 50px;
+  left: -100%;
+  background: #1c0732;
+  /* background: var(--blue); */
+  position: absolute;
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+.btn__primary_acc:hover .eff {
+  left: 0;
+}
+.btn__primary_acc:hover a {
+  color: #fff;
+}
+
+/** Create account table **/
+.btn__primary_table {
+  border-radius: 8px;
+  width: 100%;
+  margin: auto;
+  background: var(--teal);
+  border: 1.5px solid var(--teal);
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 0 8px;
+}
+
+.btn__primary_table a {
+  font-size: 13px;
+  color: var(--white);
+  text-decoration: none;
+  line-height: 25px;
+  transition: all 0.5s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.btn__primary_table .eff {
+  width: 100%;
+  height: 50px;
+  left: -100%;
+  background: #1c0732;
+  /* background: var(--blue); */
+  position: absolute;
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+.btn__primary_table:hover .eff {
+  left: 0;
+}
+.btn__primary_table:hover a {
+  color: #fff;
+}
+
+/* Primary Button */
+.btn__primary {
+  border-radius: 8px;
+  width: auto;
+  background: var(--teal);
+  border: 1px solid var(--teal);
+  height: 50px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 0 30px;
+}
+.btn__primary a {
+  /* font-family: arial; */
+  font-size: 16px;
+  color: var(--white);
+  text-decoration: none;
+  line-height: 50px;
+  transition: all 0.5s ease;
+  z-index: 2;
+  position: relative;
+}
+.btn__primary .eff {
+  width: 100%;
+  height: 50px;
+  left: -100%;
+  background: #1c0732;
+  /* background: var(--blue); */
+  position: absolute;
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+.btn__primary:hover .eff {
+  left: 0;
+}
+.btn__primary:hover a {
+  color: #fff;
+}
+/* Secondary Button */
+.btn__secondary {
+  border-radius: 8px;
+  width: auto;
+  background: var(--light);
+  border: 1px solid var(--light);
+  height: 50px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.btn__secondary a {
+  /* font-family: arial; */
+  font-size: 16px;
+  color: var(--dark);
+  text-decoration: none;
+  line-height: 50px;
+  transition: all 0.5s ease;
+  z-index: 2;
+  position: relative;
+  padding: 0 30px;
+}
+.eff {
+  width: 100%;
+  height: 50px;
+  left: -100%;
+  /* background: var(--blue); */
+  background: #1c0732;
+  position: absolute;
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+.btn__secondary:hover .eff {
+  left: 0;
+}
+.btn__secondary:hover a {
+  color: var(--white);
+}
+/* Navbar Header */
+.navbar {
+  /* background-color: var(); */
+  color: #fff;
+  padding: 7px 87px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  border-bottom: none;
+}
+ul > li > a.active {
+  color: var(--primary) !important;
+  font-weight: bold !important;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) !important;
+}
+ul > li > a {
+  /* font-family: var(--font-family-inter) !important; */
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 14px !important;
+  line-height: 24px !important;
+  letter-spacing: 0.5px !important;
+  color: var(--white) !important;
+  --webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+ul > li > a:hover {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) !important;
+  color: var(--teal) !important;
+}
+.navbar-brand > img {
+  width: 200px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.nav__toggle__btn {
+  display: none;
+}
+.nav__signin__btn {
+  width: 139px;
+  height: 41px;
+}
+.btns_groups {
+  display: flex;
+}
+.btns_groups div {
+  margin-right: 10px;
+}
+.nav__btns {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.nav__btns .login-link {
+  /* font-family: var(--font-family-inter); */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: var(--white);
+  --webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin-right: 20px;
+}
+.nav__btns .login-link:hover {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  color: var(--teal);
+  text-decoration: none;
+}
+.navbar-toggler:focus {
+  outline: none;
+}
+/* Site Header */
+.clip__path {
+  background-color: #1c0732;
+  width: 100%;
+  height: 100vh;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+  position: absolute;
+}
+.site__header__container {
+  width: 100%;
+  /* padding-right: 15px;
+  padding-left: 15px; */
+  margin-right: auto;
+  margin-left: auto;
+}
+.site__header {
+  display: grid;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+  position: relative;
+}
+.site__header__container > .site__header h1 {
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 49px;
+  text-align: center;
+  color: #fff;
+  --webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.site__header__container > .site__header a {
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  font-style: normal;
+  font-size: 18px;
+  line-height: 50px;
+  font-weight: 500;
+  color: #d5daf0;
+  text-decoration: underline;
+  text-align: center;
+  --webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.site__header__container > .site__header a:hover {
+  color: #afb5cee7;
+}
+/* Plans Pricing */
+.pricing__container {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  font: -webkit-small-control;
+  padding: 0 150px;
+}
+.pricing__container .pricing__card:first-child {
+  margin-top: 40px;
+}
+.pricing__container .pricing__card:last-child {
+  margin-top: 40px;
+}
+.pricing__container .pricing__card {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  box-shadow: 0px 24px 48px rgba(13, 21, 55, 0.05);
+  border-radius: 8px;
+  margin: 0 10px;
+  padding: 57.8px;
+}
+.pricing__container > .pricing__card > .pricing__card__header {
+  display: grid;
+  align-items: center;
+  text-align: center;
+}
+.pricing__container > .pricing__card > .pricing__card__header > span > img {
+  width: auto;
+}
+.pricing__container > .pricing__card > .pricing__card__header > h5 {
+  padding-top: 29.8px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 31px;
+  text-align: center;
+  color: #0d1537;
+}
+.pricing__container > .pricing__card > .pricing__card__header > a {
+  margin: 20px 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
+  color: #6152bd;
+}
+.pricing__container > .pricing__card > .pricing__card__header > span {
+  /* font-family: Roboto; */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  color: #737a96;
+  
+}
+.pricing__container > .pricing__card > .pricing__card__header > span > h1{
+  color: var(--teal) !important;
+}
+.pricing__container > .pricing__card > .pricing__card__body {
+  min-height: auto;
+  padding: 27.86px 0;
+}
+.pricing__container > .pricing__card > .pricing__card__body > p {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #737a96;
+}
+.pricing__container > .pricing__card > .pricing__card__body > ul {
+  list-style-image: url(../images/icon__check--small.svg);
+}
+.pricing__container > .pricing__card > .pricing__card__body > ul > li > span {
+  /* font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #737a96;
+}
+.pricing__container > .pricing__card > .pricing__card__footer > p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #737a96;
+}
+/* Plan Overview */
+.plans__overview {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 100px;
+  overflow-x: hidden;
+}
+.plans__overview > .plans__overview__header {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.plans__overview > .plans__overview__header > h1 {
+  font-size: 1.875rem;
+  color: #0d1537;
+  font-weight: 700;
+  line-height: 1.1;
+}
+.plans__overview > .tabs {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: -40px;
+}
+.plans__overview > .tabs > .btn-group > .tab__btn {
+  width: 224px;
+  height: 80px;
+  background: #ffffff;
+  border: 1px solid #d4d6df;
+  box-sizing: border-box;
+  box-shadow: 0px 24px 48px rgba(13, 21, 55, 0.05);
+  border-radius: 0px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+  display: grid;
+  justify-content: center;
+  color: #000000;
+}
+.plans__overview > .tabs > .btn-group > .tab__btn:hover,
+.plans__overview > .tabs > .btn-group > .tab__btn:focus {
+  background: #f9fafd;
+  outline: none;
+}
+.plans__overview > .tabs > .btn-group > .tab__btn:first-child {
+  border-radius: 8px 0px 0px 8px;
+}
+.plans__overview > .tabs > .btn-group > .tab__btn:last-child {
+  border-radius: 0px 8px 8px 0px;
+}
+.plans__overview > .tabs > .btn-group > .tab__btn.active {
+  background: rgba(82, 189, 149, 0.44);
+  border: 1px solid #52bd95;
+}
+.plans__overview > .plans__overview__body {
+  padding: 87px;
+  background: rgba(112, 211, 233, 0.08);
+}
+.plans__overview
+  > .plans__overview__body
+  > .plans__overview__container
+  > .row
+  > div:last-child
+  > h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22.2px;
+  line-height: 28px;
+  color: #343a40;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.plans__overview
+  > .plans__overview__body
+  > .plans__overview__container
+  > .row
+  > div:last-child
+  > ul {
+  list-style: none;
+}
+.plans__overview
+  > .plans__overview__body
+  > .plans__overview__container
+  > .row
+  > div:last-child
+  > ul
+  > li {
+  display: flex;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.plans__overview
+  > .plans__overview__body
+  > .plans__overview__container
+  > .row
+  > div:last-child
+  > ul
+  > li
+  > p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #0d1537;
+}
+.plans__overview
+  > .plans__overview__body
+  > .plans__overview__container
+  > .row
+  > div:last-child
+  > .demo__status {
+  margin-top: 40px;
+}
+.plans__overview
+  > .plans__overview__body
+  > .plans__overview__container
+  > .row
+  > div:last-child
+  > .demo__status
+  > a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: #6152bd;
+}
+.plans__overview
+  > .plans__overview__body
+  > .plans__overview__container
+  > .row
+  > div:last-child
+  > .demo__status
+  > span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #737a96;
+  margin-left: 15px;
+}
+/* Webinar Registration Section */
+.webinar_registration_section {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 100px 124px;
+  overflow: hidden !important;
+}
+.webinar_registration_section .webinar_registration_content {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.webinar_registration_section .row {
+  /* background: linear-gradient(180deg, rgba(112, 200, 168, 0.72) 0%, rgba(255, 255, 255, 0) 100%), #29B5E8; */
+  background-color: #1c0732;
+  padding: 63px;
+}
+.webinar_registration_section .row .col-12 img {
+  position: absolute;
+}
+.webinar_registration_content h1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 44px;
+  color: #ffffff !important;
+}
+.webinar_registration_content p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 35px;
+  color: var(--gray3) !important;
+}
+/* Footer */
+footer {
+  width: 100%;
+  height: auto;
+  padding: 87px;
+  background: #1c0732;
+}
+footer div:first-child {
+  margin-bottom: 2.1rem;
+}
+footer .row .col-12 h5 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14.8px;
+  line-height: 31px;
+  color: #fff;
+}
+footer .row .col-12 ul > li {
+  margin-top: 1rem;
+}
+footer .row .col-12 ul > li > a {
+  color: #b1b5d3;
+  font-size: 14px;
+  padding: 0 0 2px;
+}
+footer .row .col-12 ul > li > a:hover {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  color: var(--primary);
+  text-decoration: none;
+}
+@media (max-width: 992px) {
+  /* Navbar */
+  .navbar {
+    padding: 7px 20px;
+  }
+  .navbar-brand > img {
+    width: 150px;
+  }
+  .nav {
+    display: -ms-flexbox !important;
+    display: grid !important;
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+    padding-left: 0 !important;
+    margin-bottom: 0;
+    list-style: none;
+    text-align: initial !important;
+    margin-top: 30px !important;
+  }
+  .nav__signin__btn {
+    display: none;
+  }
+  .nav__toggle__btn {
+    display: block;
+  }
+  .nav__btns .login-link {
+    display: none;
+  }
+  .nav__btns .demo-btn {
+    display: none;
+  }
+  /* Site Header */
+  .site__header {
+    padding: 10px 0;
+  }
+  .site__header h1 {
+    font-size: 1.875rem;
+    line-height: 1;
+  }
+  .site__header a {
+    font-size: 1rem;
+    line-height: 10px;
+    margin-top: 10px;
+  }
+  /* Pricing Section */
+  .pricing__container {
+    flex-flow: column;
+    padding: 0 20px 0 0;
+    overflow-x: hidden;
+  }
+  .pricing__container .pricing__card {
+    margin-bottom: 30px;
+    padding: 40px;
+  }
+  .pricing__container .pricing__card:first-child {
+    margin-top: 40px;
+  }
+  .pricing__container .pricing__card:last-child {
+    margin-top: 0;
+  }
+  .pricing__container > .pricing__card > .pricing__card__body {
+    min-height: auto;
+    padding: auto;
+  }
+  .text-primary {
+    color: var(--teal) !important;
+}
+  /* Plans Overview */
+  .plans__overview > .plans__overview__body {
+    padding: 87px 20px;
+  }
+  .plans__overview > .tabs {
+    margin-bottom: -20px;
+  }
+  .plans__overview > .tabs > .btn-group {
+    display: flex !important;
+  }
+  .plans__overview > .tabs > .btn-group > .tab__btn {
+    width: auto;
+    height: auto;
+  }
+  .plans__overview
+    > .plans__overview__body
+    > .plans__overview__container
+    > .row
+    > div:last-child
+    > .demo__status {
+    margin-top: 20px;
+  }
+  /* Webinar Registration Section */
+  .webinar_registration_section {
+    padding: 20px;
+  }
+  .webinar_registration_section .row {
+    background: linear-gradient(
+        180deg,
+        rgba(112, 200, 168, 0.72) 0%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      #29b5e8;
+    padding: 63px 20px;
+  }
+  .webinar_registration_section .row .col-12 img {
+    position: absolute;
+  }
+  /* Footer */
+  footer {
+    padding: 20px;
+  }
+}

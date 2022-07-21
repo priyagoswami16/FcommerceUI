@@ -1,0 +1,188 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="site-assets/images/favicon.png" type="image/gif" sizes="16x16">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/pricing.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>BotSuite</title>
+
+</head>
+
+<body>
+  <header class="header">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <a class="navbar-brand" href="/"><img src="assets/images/logo.png" alt="" style="width: 150px;"></a>
+        <button type="button" class="navbar-toggler text-primary" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-list-nested" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav mx-auto mt-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pricing">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="career">Career</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact">Contact</a>
+                </li>
+                <li class="nav-item d-block d-lg-none">
+                    <div class="btn__primary demo-btn">
+                        <div class="eff"></div>
+                        <a href="pricing"> Get started free  </a>
+                    </div>
+                </li>
+            </ul>
+            <div class="nav__btns my-auto ml-auto">
+                <a class="login-link" href="https://app.botsuite.io">Login</a>
+                <div class="btn__primary demo-btn">
+                    <div class="eff"></div>
+                    <a href="pricing"> Get started free </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+  </header>
+    <div class="col-md-10 m-auto">
+        <div class="contact-form">
+            <div class="my-5">
+                <form class="contact100-form validate-form" action="thankyou.php"  enctype="multipart/form-data" method="POST">
+                    <span class="contact100-form-title">
+                        Contact Us
+                    </span>
+    
+                    <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
+                        <span class="label-input100">Your Name</span>
+                        <input class="input100 text-dark" type="text" name="name" placeholder="Enter your name" required>
+                        <span class="focus-input100"></span>
+                    </div>
+    
+                    <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                        <span class="label-input100">Email</span>
+                        <input class="input100 text-dark" type="text" name="email" placeholder="Enter your email addess" required>
+                        <span class="focus-input100"></span>
+                    </div>
+    
+                    <div class="wrap-input100 validate-input" data-validate = "Message is required">
+                        <span class="label-input100">Message</span>
+                        <textarea class="input100 text-dark" name="message" placeholder="Your message here..."></textarea>
+                        <span class="focus-input100"></span>
+                    </div>
+    
+                    <div class="">
+                        <div class="submit-btn" style="border-radius: 8px;">
+                          <div class="eff-sub"></div>
+                          <button type="submit" name="submit" value="Submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+   <!-- Footer -->
+   <div class="footer">
+    <div class="layout-width">
+      <div class="">
+        <img src="assets/images/logo.png" class="footer-logo">
+      </div>
+      <div class="row footer-content">
+        <div class="p-4 col-md-3">
+          <h5 class="mb-4 font-wight-bold">Product</h5>
+          <ul class="list-unstyled">
+            <li class="nav-item">
+              <a href="features" class="footer-nav-link">Features</a>
+            </li>
+            <li class="nav-item">
+              <a href="pricing" class="footer-nav-link">Pricing</a> <br>
+            </li>
+            <li class="nav-item">
+              <a href="gdpr" class="footer-nav-link">GDPR</a> <br>
+            </li>
+          </ul>
+        </div>
+        <div class="p-4 col-md-3">
+          <h5 class="mb-4 font-wight-bold">Company</h5>
+          <ul class="list-unstyled">
+            <li class="nav-item">
+              <a href="about" class="footer-nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="career" class="footer-nav-link">Career</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://app.botsuite.io/blog" class="footer-nav-link">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="p-4 col-md-3">
+          <h5 class="mb-4">Support</h5>
+          <ul class="list-unstyled">
+            <li class="nav-item">
+              <a href="https://app.botsuite.io/" class="footer-nav-link">Submit Ticket</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://www.facebook.com/groups/729054524620239" class="footer-nav-link">Facebook Community</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact" class="footer-nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="p-4 col-md-3">
+          <h5 class="mb-4">Resources</h5>
+          <ul class="list-unstyled">
+            <li class="nav-item">
+              <a href="terms-of-use" class="footer-nav-link">Terms & Conditions</a>
+            </li>
+            <li class="nav-item">
+              <a href="privacy-policy" class="footer-nav-link">Privacy Policy</a>
+            </li>
+            <li class="nav-item">
+              <a href="legal-and-security" class="footer-nav-link">Legal & Security</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 mt-3 d-flex">
+          <p class="text-start copyright-text">© Copyright 2020 BotSuite. Appernity Technologies Pvt Ltd - All rights reserved. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

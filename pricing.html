@@ -1,0 +1,1078 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="assets/images/favicon.png" type="image/gif" sizes="16x16">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/pricing.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>BotSuite</title>
+
+    <script>
+
+        $(document).ready(function(){
+        $('input[type="checkbox"]').click(function(){
+            if($(this).is(":checked")){
+                $("#hide").hide();
+                    $("#show").show();
+            }
+            else if($(this).is(":not(:checked)")){
+                $("#hide").show();
+                    $("#show").hide();
+            }
+        });
+    });
+
+    $(document).ready(function(){
+        $('input[type="checkbox"]').click(function(){
+            if($(this).is(":checked")){
+                $("#hidetable").hide();
+                    $("#showtable").show();
+            }
+            else if($(this).is(":not(:checked)")){
+                $("#hidetable").show();
+                    $("#showtable").hide();
+            }
+        });
+    });
+
+    </script>
+</head>
+
+<body>
+    <header class="header">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <a class="navbar-brand" href="/"><img src="assets/images/logo.png" alt="" style="width: 150px;"></a>
+        <button type="button" class="navbar-toggler text-primary" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-list-nested" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav mx-auto mt-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pricing">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="career">Career</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact">Contact</a>
+                </li>
+                <li class="nav-item d-block d-lg-none">
+                    <div class="btn__primary demo-btn">
+                        <div class="eff"></div>
+                        <a href="https://app.botsuite.io"> Get Started Free </a>
+                    </div>
+                </li>
+            </ul>
+            <div class="nav__btns my-auto ml-auto">
+                <a class="login-link" href="https://app.botsuite.io">Login</a>
+                <div class="btn__primary demo-btn">
+                    <div class="eff"></div>
+                    <a href="https://app.botsuite.io"> Get Started Free </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    </header>
+
+    <!-- Site header -->
+    <div class="clip__path"></div>
+    <section class="site__header__container">
+        <div class="col-md-8 mx-auto site__header">
+            <h1>There is something for everyone, from individuals to businesses.</h1>
+            <h5 class="text-white-50" href="#">Choose a plan and watch your business grow!</h5>
+
+            <!-- Rounded switch -->
+            <div class="toggel-plan d-flex m-auto">
+                <h4 class="text-white mr-3">Monthly</h4>
+                <label class="switch">
+                    <input type="checkbox" id="toggle">
+                    <span class="slider round"></span>
+                </label>
+                <h4 class="text-white ml-3">Yearly</h4>
+            </div>
+
+        </div>
+
+        <!-- Monthly -->
+        <div class="pricing__container" id="hide">
+            <!-- Beginner Plan -->
+            <div class="pricing__card">
+                <div class="pricing__card__header">
+                    <span class="vector"><img src="assets/images/cricle1.svg" alt=""></span>
+                    <h5>Free</h5>
+                    <p>Get your chatbot up and running and start collecting leads.</p>
+                    <span style="display: flex;align-items: center;justify-content: center;">
+                        <h1 class="text-primary monthly" id="hide">$0/Month</h1>
+                        <!-- <h1 class="text-primary yearly" id="show">$29/Yearly</h1> -->
+                    </span>
+                    <div class="btn__primary_acc demo-btn">
+                        <div class="eff"></div>
+                        <a href="https://app.botsuite.io/home/sign_up">Create account</a>
+                    </div>
+                </div>
+                <hr class="my-0 py-0">
+                <div class="pricing__card__body">
+                    <p>What you can do</p>
+                    <ul>
+                        <li><span>Facebook Messenger Bot</span></li>
+                        <li><span>3 Projects</span></li>
+                        <li><span>Create E-Commerce Store With Limited Features</span></li>
+                        <li><span>Support - Community & 7 Day Live Chat</span></li>
+                        <!-- <li><span>Drag & Drop Email Template Builder</span></li>
+                        <li><span>5 Email Autoresponder</span></li>
+                        <li><span>SMS Broadcast</span></li>
+                        <li><span>4 Social Poster</span></li>
+                        <li><span>Comparison Marketing</span></li> -->
+                    </ul>
+                </div>
+                <hr>
+                <div class="pricing__card__footer">
+                    <!-- <p>Helps startups like</p> -->
+                </div>
+            </div>
+            <!-- Entrepreneur plan -->
+            <div class="pricing__card">
+                <div class="pricing__card__header">
+                    <span class="vector"><img src="assets/images/cr.svg" alt=""></span>
+                    <h5>Pro</h5>
+                    <span style="display: flex;align-items: center;justify-content: center;">
+                        <h1 class="text-primary monthly" id="hide">$39/Month</h1>
+                    </span>
+                    <div class="btn__primary_acc demo-btn">
+                        <div class="eff"></div>
+                        <a href="https://app.botsuite.io/home/sign_up">Create account</a>
+                    </div>
+                </div>
+                <hr class="my-0 py-0">
+                <div class="pricing__card__body">
+                    <p>What you can do</p>
+                    <ul>
+                        <li><span>Facebook Messenger</span></li>
+                        <li><span>Unlimited Bot Projects</span></li>
+                        <li><span>Create E-Commerce Store With All Features</span></li>
+                        <li><span>Facebook Comment Automation</span></li>
+                        <li><span>Instagram Comment Automation</span></li>
+                        <li><span>Email Marketing</span></li>
+                        <li><span>Drag & Drop Email Template Builder</span></li>
+                        <li><span>Sms Marketing</span></li>
+                        <li><span>Social Posting</span></li>
+                        <li><span>Zapier Integration</span></li>
+                        <li><span>Analytics & Insights</span></li>
+                        <li><span>Website Comparison</span></li>
+                        <li><span>Hashtag Search</span></li>
+                        <li><span>Support - Tickets & Live Chat</span></li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="pricing__card__footer">
+                </div>
+            </div>
+            <!-- Startup Plan -->
+            <div class="pricing__card">
+                <div class="pricing__card__header">
+                    <span class="vector"><img src="assets/images/threecrilce.svg" alt=""></span>
+                    <h5>Business</h5>
+                    <span style="display: flex;align-items: center;justify-content: center;">
+                        <!-- <h1 class="text-primary monthly" id="hide">Contact</h1> -->
+                    </span>
+                    <div class="btn__primary_acc demo-btn">
+                        <div class="eff"></div>
+                        <a href="contact">Let's Chat</a>
+                    </div>
+                </div>
+                <hr class="my-0 py-0">
+                <div class="pricing__card__body">
+                    <p>What you can do</p>
+                    <ul>
+                        <li><span>Great for businesses and agencies with high volume of traffic.</span></li>
+                        <li><span>Get access to all Botsuite features in Pro, plus custom services.</span></li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="pricing__card__footer">
+                </div>
+            </div>
+        </div>
+
+        <!-- Yearly -->
+        <div class="pricing__container" id="show" style="display: none;">
+            <!-- Beginner Plan -->
+            <div class="pricing__card">
+                <div class="pricing__card__header">
+                    <span class="vector"><img src="site-assets/images/icon__circle.svg" alt=""></span>
+                    <h5>Free</h5>
+                    <p>Get your chatbot up and running and start collecting leads.</p>
+                    <span style="display: flex;align-items: center;justify-content: center;">
+                        <h1 class="text-primary monthly" id="hide">$0/Month</h1>
+                        <!-- <h1 class="text-primary yearly" id="show">$29/Yearly</h1> -->
+                    </span>
+                    <div class="btn__primary_acc demo-btn">
+                        <div class="eff"></div>
+                        <a href="https://app.botsuite.io/home/sign_up">Create account</a>
+                    </div>
+                </div>
+                <hr class="my-0 py-0">
+                <div class="pricing__card__body">
+                    <p>What you can do</p>
+                    <ul>
+                        <li><span>Facebook Messenger Bot</span></li>
+                        <li><span>3 Projects</span></li>
+                        <li><span>Create E-Commerce Store With Limited Features</span></li>
+                        <li><span>Support - Community & 7 Day Live Chat</span></li>
+                        <!-- <li><span>Drag & Drop Email Template Builder</span></li>
+                        <li><span>5 Email Autoresponder</span></li>
+                        <li><span>SMS Broadcast</span></li>
+                        <li><span>4 Social Poster</span></li>
+                        <li><span>Comparison Marketing</span></li> -->
+                    </ul>
+                </div>
+                <hr>
+                <div class="pricing__card__footer">
+                    <!-- <p>Helps startups like</p> -->
+                </div>
+            </div>
+            <!-- Entrepreneur plan -->
+            <div class="pricing__card">
+                <div class="pricing__card__header">
+                    <span class="vector"><img src="site-assets/images/icon__circle-double.svg" alt=""></span>
+                    <h5>Pro</h5>
+                    <span style="display: flex;align-items: center;justify-content: center;">
+                        <h1 class="text-primary yearly" id="show">$29/Year</h1>
+                    </span>
+                    <div class="btn__primary_acc demo-btn">
+                        <div class="eff"></div>
+                        <a href="https://app.botsuite.io/home/sign_up">Create account</a>
+                    </div>
+                </div>
+                <hr class="my-0 py-0">
+                <div class="pricing__card__body">
+                    <p>What you can do</p>
+                    <ul>
+                        <li><span>Facebook Messenger</span></li>
+                        <li><span>Unlimited Bot Projects</span></li>
+                        <li><span>Create E-Commerce Store With All Features</span></li>
+                        <li><span>Facebook Comment Automation</span></li>
+                        <li><span>Instagram Comment Automation</span></li>
+                        <li><span>Email Marketing</span></li>
+                        <li><span>Drag & Drop Email Template Builder</span></li>
+                        <li><span>Sms Marketing</span></li>
+                        <li><span>Social Posting</span></li>
+                        <li><span>Zapier Integration</span></li>
+                        <li><span>Analytics & Insights</span></li>
+                        <li><span>Website Comparison</span></li>
+                        <li><span>Hashtag Search</span></li>
+                        <li><span>Support - Tickets & Live Chat</span></li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="pricing__card__footer">
+                </div>
+            </div>
+            <!-- Startup Plan -->
+            <div class="pricing__card">
+                <div class="pricing__card__header">
+                    <span class="vector"><img src="site-assets/images/icon__circle-triple.svg" alt=""></span>
+                    <h5>Business</h5>
+                    <span style="display: flex;align-items: center;justify-content: center;">
+                        <!-- <h1 class="text-primary monthly" id="hide">$29/Month</h1> -->
+                    </span>
+                    <div class="btn__primary_acc demo-btn">
+                        <div class="eff"></div>
+                        <a href="mailto:info@botsuite.io">Let's Chat</a>
+                    </div>
+                </div>
+                <hr class="my-0 py-0">
+                <div class="pricing__card__body">
+                    <p>What you can do</p>
+                    <ul>
+                        <li><span>Great for businesses and agencies with high volume of traffic.</span></li>
+                        <li><span>Get access to all Botsuite features in Pro, plus custom services.</span></li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="pricing__card__footer">
+                </div>
+            </div>
+        </div>
+
+    <!-- Plan Overview -->
+    <!-- <section class="plans__overview">
+        <div class="plans__overview__header">
+            <h1>Which plan is right for you?</h1>
+        </div>
+        <div class="tabs" id="plans__overview_tab" role="tablist">
+            <div class="btn-group nav nav-tabs">
+                <a id="nav-free-plan-tab" data-toggle="tab" href="#nav-free-plan" role="tab"
+                    aria-controls="nav-free-plan" aria-selected="true" class="btn tab__btn nav-link active">Free</a>
+                <a id="nav-team-plan-tab" data-toggle="tab" href="#nav-team-plan" role="tab"
+                    aria-controls="nav-team-plan" aria-selected="false" class="btn tab__btn nav-link">Team</a>
+                <a id="nav-business-plan-tab" data-toggle="tab" href="#nav-business-plan" role="tab"
+                    aria-controls="nav-business-plan" aria-selected="false" class="btn tab__btn nav-link">Business</a>
+            </div>
+        </div>
+        <div class="plans__overview__body tab-content" id="nav-tabContent"> -->
+            <!-- Free Plan -->
+            <!-- <div class="plans__overview__container tab-pane fade show active" id="nav-free-plan" role="tabpanel"
+                aria-labelledby="nav-free-plan-tab">
+                <div class="row">
+                    <div class="col-12 col-lg-8 order-lg-2">
+                        <img src="site-assets/images/xf-product 1.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-12 col-lg-4 order-lg-1">
+                        <h3>Free plan:</h3>
+                        <ul>
+                            <li>
+                                <span class="my-auto mr-3"><img src="site-assets/images/icon__checked--green.svg"
+                                        alt=""></span>
+                                <p class="my-auto">Collect data from</p>
+                            </li>
+                            <li>
+                                <span class="my-auto mr-3"><img src="site-assets/images/icon__checked--green.svg"
+                                        alt=""></span>
+                                <p class="my-auto">Send data to unlimited destinations</p>
+                            </li>
+                            <li>
+                                <span class="my-auto mr-3"><img src="site-assets/images/icon__checked--green.svg"
+                                        alt=""></span>
+                                <p class="my-auto">10,000 monthly users included</p>
+                            </li>
+                            <li>
+                                <span class="my-auto mr-3"><img src="site-assets/images/icon__checked--green.svg"
+                                        alt=""></span>
+                                <p class="my-auto">Activate audiences with Personas</p>
+                            </li>
+                            <li>
+                                <span class="my-auto mr-3"><img src="site-assets/images/icon__checked--green.svg"
+                                        alt=""></span>
+                                <p class="my-auto">Enforce data quality with Protocols</p>
+                            </li>
+                            <li>
+                                <span class="my-auto mr-3"><img src="site-assets/images/icon__checked--green.svg"
+                                        alt=""></span>
+                                <p class="my-auto">Transform and enrich your data</p>
+                            </li>
+                            <li>
+                                <span class="my-auto mr-3"><img src="site-assets/images/icon__checked--green.svg"
+                                        alt=""></span>
+                                <p class="my-auto">Set granular user roles and permissions</p>
+                            </li>
+                        </ul>
+                        <div class="demo__status">
+                            <a href="#">Request demo</a>
+                            <span>14-day free trial</span>
+                        </div>
+                        <div class="btn__primary mt-5">
+                            <div class="eff"></div>
+                            <a href="#">
+                                Create a free
+                                account
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- Team Plan -->
+            <!-- <div class="plans__overview__container tab-pane fade show" id="nav-team-plan" role="tabpanel"
+                aria-labelledby="nav-team-plan-tab">
+                <div class="row">
+                    <div class="col-12 col-lg-8 order-lg-2">
+                        <img src="site-assets/images/p-img-7 1.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-12 col-lg-4 order-lg-1">
+                        <h3>Team plan:</h3>
+                        <ul>
+                            <li>
+                                <span class="my-auto mr-3"><img src="site-assets/images/icon__checked--green.svg"
+                                        alt=""></span>
+                                <p class="my-auto">Collect data from</p>
+                            </li>
+                            <li>
+                                <span class="my-auto mr-3"><img src="site-assets/images/icon__checked--green.svg"
+                                        alt=""></span>
+                                <p class="my-auto">Send data to unlimited destinations</p>
+                            </li>
+                            <li>
+                                <span class="my-auto mr-3"><img src="site-assets/images/icon__checked--green.svg"
+                                        alt=""></span>
+                                <p class="my-auto">10,000 monthly users included</p>
+                            </li>
+                            <li>
+                                <span class="my-auto mr-3"><img src="site-assets/images/icon__checked--green.svg"
+                                        alt=""></span>
+                                <p class="my-auto">Activate audiences with Personas</p>
+                            </li>
+                            <li>
+                                <span class="my-auto mr-3"><img src="site-assets/images/icon__checked--green.svg"
+                                        alt=""></span>
+                                <p class="my-auto">Enforce data quality with Protocols</p>
+                            </li>
+                            <li>
+                                <span class="my-auto mr-3"><img src="site-assets/images/icon__checked--green.svg"
+                                        alt=""></span>
+                                <p class="my-auto">Transform and enrich your data</p>
+                            </li>
+                            <li>
+                                <span class="my-auto mr-3"><img src="site-assets/images/icon__checked--green.svg"
+                                        alt=""></span>
+                                <p class="my-auto">Set granular user roles and permissions</p>
+                            </li>
+                        </ul>
+                        <div class="demo__status">
+                            <a href="#">Request demo</a>
+                            <span>14-day free trial</span>
+                        </div>
+                        <div class="btn__primary mt-5">
+                            <div class="eff"></div>
+                            <a href="#">
+                                Create a free
+                                account
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- Business Plan -->
+            <!-- <div class="plans__overview__container tab-pane fade show" id="nav-business-plan" role="tabpanel"
+                aria-labelledby="nav-business-plan-tab">
+                <div class="row">
+                    <div class="col-12 col-lg-8 order-lg-2">
+                        <img src="site-assets/images/p-img-8 1.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-12 col-lg-4 order-lg-1">
+                        <h3>Business plan:</h3>
+                        <ul>
+                            <li>
+                                <span class="my-auto mr-3"><img src="site-assets/images/icon__checked--green.svg"
+                                        alt=""></span>
+                                <p class="my-auto">Collect data from</p>
+                            </li>
+                            <li>
+                                <span class="my-auto mr-3"><img src="site-assets/images/icon__checked--green.svg"
+                                        alt=""></span>
+                                <p class="my-auto">Send data to unlimited destinations</p>
+                            </li>
+                            <li>
+                                <span class="my-auto mr-3"><img src="site-assets/images/icon__checked--green.svg"
+                                        alt=""></span>
+                                <p class="my-auto">10,000 monthly users included</p>
+                            </li>
+                            <li>
+                                <span class="my-auto mr-3"><img src="site-assets/images/icon__checked--green.svg"
+                                        alt=""></span>
+                                <p class="my-auto">Activate audiences with Personas</p>
+                            </li>
+                            <li>
+                                <span class="my-auto mr-3"><img src="site-assets/images/icon__checked--green.svg"
+                                        alt=""></span>
+                                <p class="my-auto">Enforce data quality with Protocols</p>
+                            </li>
+                            <li>
+                                <span class="my-auto mr-3"><img src="site-assets/images/icon__checked--green.svg"
+                                        alt=""></span>
+                                <p class="my-auto">Transform and enrich your data</p>
+                            </li>
+                            <li>
+                                <span class="my-auto mr-3"><img src="site-assets/images/icon__checked--green.svg"
+                                        alt=""></span>
+                                <p class="my-auto">Set granular user roles and permissions</p>
+                            </li>
+                        </ul>
+                        <div class="demo__status">
+                            <a href="#">Request demo</a>
+                            <span>14-day free trial</span>
+                        </div>
+                        <div class="btn__primary mt-5">
+                            <div class="eff"></div>
+                            <a href="#">
+                                Create a free
+                                account
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Compare plans -->
+    <section class="py-5">
+        <div class="container">
+            <div class="container py-5">
+                <h2 class="text-center font-weight-bold">Compare plans</h2>
+            </div>
+            <div class="table-responsive-lg">
+                <table class="table table-striped pricing-table">
+                    <!-- Montly -->
+                    <thead id="hidetable">
+                        <tr>
+                            <th class="text-center border-0 pb-5"></th>
+                            <th class="text-center border-0 pb-5">
+                                <h6 class="lead font-weight-bold pricing-plan-title">Free</h6>
+                                <p class="small pricing-plan-allotment"><span><b>$0</b></span>/Month</p>
+                                <div class="btn__primary_table demo-btn">
+                                    <div class="eff"></div>
+                                    <a href="https://app.botsuite.io/home/sign_up">Create an account</a>
+                                </div>
+                            </th>
+                            <!-- <th class="text-center border-0 pb-5">
+                                <h6 class="lead font-weight-bold pricing-plan-title">Entrepreneur</h6>
+                                <p class="small pricing-plan-allotment"><span><b>$59</b></span>/Month</p>
+                                <div class="btn__primary_table demo-btn">
+                                    <div class="eff"></div>
+                                    <a href="https://app.botsuite.io/home/sign_up">Create an account</a>
+                                </div>
+                            </th> -->
+                            <th class="text-center border-0 pb-5">
+                                <h6 class="lead font-weight-bold pricing-plan-title">Pro</h6>
+                                <p class="small pricing-plan-allotment"><span><b>$39</b></span>/Month</p>
+                                <div class="btn__primary_table demo-btn">
+                                    <div class="eff"></div>
+                                    <a href="https://app.botsuite.io/home/sign_up">Create an account</a>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <!-- Yearly -->
+
+                    <thead id="showtable" style="display: none;">
+                        <tr>
+                            <th class="text-center border-0 pb-5"></th>
+                            <th class="text-center border-0 pb-5">
+                                <h6 class="lead font-weight-bold pricing-plan-title">Beginner</h6>
+                                <p class="small pricing-plan-allotment"><span><b>$0</b></span>/Year</p>
+                                <div class="btn__primary_table demo-btn">
+                                    <div class="eff"></div>
+                                    <a href="https://app.botsuite.io/home/sign_up">Create an account</a>
+                                </div>
+                            </th>
+                            <!-- <th class="text-center border-0 pb-5">
+                                <h6 class="lead font-weight-bold pricing-plan-title">Entrepreneur</h6>
+                                <p class="small pricing-plan-allotment"><span><b>$39</b></span>/Year</p>
+                                <div class="btn__primary_table demo-btn">
+                                    <div class="eff"></div>
+                                    <a href="https://app.botsuite.io/home/sign_up">Create an account</a>
+                                </div>
+                            </th> -->
+                            <th class="text-center border-0 pb-5">
+                                <h6 class="lead font-weight-bold pricing-plan-title">Startup</h6>
+                                <p class="small pricing-plan-allotment"><span><b>$29</b></span>/Year</p>
+                                <div class="btn__primary_table demo-btn">
+                                    <div class="eff"></div>
+                                    <a href="https://app.botsuite.io/home/sign_up">Create an account</a>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <thead>
+                        <tr>
+                            <!-- <th class="text-left border-0 pb-4 pl-0">Plan & Features</th> -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row" class="border-0">Messenger Bot<span class="ml-1"></span></td>
+                            <td class="text-center border-bottom">
+                                <span class="icon icon-rounded icon-danger"><img
+                                        src="assets/images/right-tik.svg" alt=""></span>
+                            </td>
+                            <!-- <td class="border-0 text-center">
+                                <span class="icon icon-rounded icon-success"><small
+                                        class="text-muted">100</small></span>
+                            </td> -->
+                            <td class="border-0 text-center">
+                                <span class="icon icon-rounded icon-danger"><img
+                                    src="assets/images/right-tik.svg" alt=""></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Build custome chatbots<span class="ml-1"></span></td>
+                            <td class="text-center">
+                                <span class="icon icon-rounded icon-success"><small class="text-muted">3</small></span>
+                            </td>
+                            <!-- <td class="border-0 text-center">
+                                <span class="icon icon-rounded icon-success"><small class="text-muted">50</small></span>
+                            </td> -->
+                            <td class="border-0 text-center">
+                                <span class="icon icon-rounded icon-success"><small
+                                        class="text-muted">Unlimited</small></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row">E-coomerce store<span class="ml-1"></span></td>
+                            <td class="text-center border-bottom">
+                                <span class="icon icon-rounded icon-success"><small class="text-muted">With Limited Features</small></span>
+                            </td>
+                            <!-- <td class="border-0 text-center">
+                                <span class="icon icon-rounded icon-success"><small class="text-muted">10</small></span>
+                            </td> -->
+                            <td class="border-0 text-center">
+                                <span class="icon icon-rounded icon-success"><small class="text-muted">With All Features</small></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Facebook Comment Automation<span class="ml-1"></span></td>
+                            <td class="text-center">
+                                <span class="icon icon-rounded icon-success"><small class="text-muted">2</small></span>
+                            </td>
+                            <!-- <td class="border-0 text-center">
+                                <span class="icon icon-rounded icon-success"><small class="text-muted">50</small></span>
+                            </td> -->
+                            <td class="border-0 text-center">
+                                <span class="icon icon-rounded icon-danger"><img
+                                    src="site-assets/images/icon__checked--green.svg" alt=""></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Instagram Comment Automation<span class="ml-1"></span></td>
+                            <td class="text-center border-bottom">
+                                <span class="icon icon-rounded icon-danger"><img src="assets/images/Rectangle-dash.png"
+                                        alt=""></span>
+                            </td>
+                            <!-- <td class="text-center border-bottom">
+                                <span class="icon icon-rounded icon-danger"><img
+                                        src="site-assets/images/icon__checked--green.svg" alt=""></span>
+                            </td> -->
+                            <td class="text-center border-bottom">
+                                <span class="icon icon-rounded icon-success"><img
+                                        src="assets/images/right-tik.svg" alt=""></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row" class="border-bottom">Email Marketing<span class="ml-1"></span></td>
+                            <td class="text-center border-bottom">
+                                <span class="icon icon-rounded icon-danger"><img src="assets/images/Rectangle-dash.png"
+                                        alt=""></span>
+                            </td>
+                            <!-- <td class="border-0 text-center">
+                                <span class="icon icon-rounded icon-success"><small class="text-muted">5</small></span>
+                            </td> -->
+                            <td class="border-0 text-center">
+                                <span class="icon icon-rounded icon-success"><img
+                                    src="assets/images/right-tik.svg" alt=""></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row" class="border-bottom">Drag & Drop Email Template Builder<span class="ml-1"></span></td>
+                            <td class="text-center border-bottom">
+                                <span class="icon icon-rounded icon-danger"><img src="assets/images/Rectangle-dash.png"
+                                        alt=""></span>
+                            </td>
+                            <!-- <td class="border-0 text-center">
+                                <span class="icon icon-rounded icon-success"><small class="text-muted">8</small></span>
+                            </td> -->
+                            <td class="border-0 text-center">
+                                <span class="icon icon-rounded icon-success"><img
+                                    src="assets/images/right-tik.svg" alt=""></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row" class="border-bottom">Sms Marketing<span class="ml-1"></span></td>
+                            <td class="text-center border-bottom">
+                                <span class="icon icon-rounded icon-danger"><img src="assets/images/Rectangle-dash.png"
+                                        alt=""></span>
+                            </td>
+                            <!-- <td class="border-0 text-center">
+                                <span class="icon icon-rounded icon-success"><small
+                                        class="text-muted">15+</small></span>
+                            </td> -->
+                            <td class="border-0 text-center">
+                                <span class="icon icon-rounded icon-success"><img
+                                    src="assets/images/right-tik.svg" alt=""></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row" class="border-bottom">Import and export contacts<span class="ml-1"></span></td>
+                            <td class="text-center border-bottom">
+                                <span class="icon icon-rounded icon-danger"><img src="assets/images/Rectangle-dash.png"
+                                        alt=""></span>
+                            </td>
+                            <!-- <td class="text-center border-bottom">
+                                <span class="icon icon-rounded icon-danger"><img
+                                        src="site-assets/images/icon__checked--green.svg" alt=""></span>
+                            </td> -->
+                            <td class="text-center border-bottom">
+                                <span class="icon icon-rounded icon-success"><img
+                                        src="assets/images/right-tik.svg" alt=""></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row" class="border-bottom">Social Posting<span class="ml-1"></span></td>
+                            <td class="text-center border-bottom">
+                                <span class="icon icon-rounded icon-danger"><img src="assets/images/Rectangle-dash.png"
+                                        alt=""></span>
+                            </td>
+                            <!-- <td class="text-center border-bottom">
+                                <span class="icon icon-rounded icon-danger"><img
+                                        src="site-assets/images/social-icons/twitter_circle-512.webp" width="20px"
+                                        alt=""></span>
+                                <span class="icon icon-rounded icon-danger"><img
+                                        src="site-assets/images/social-icons/facebook.png" width="20px" alt=""></span>
+                                <span class="icon icon-rounded icon-danger"><img
+                                        src="site-assets/images/social-icons/social-linkedin-circle-512.webp"
+                                        width="20px" alt=""></span>
+                                <span class="icon icon-rounded icon-danger"><img
+                                        src="site-assets/images/social-icons/pintrest.png" width="20px" alt=""></span>
+                                <span class="icon icon-rounded icon-danger"><img
+                                        src="site-assets/images/social-icons/instagram.jpg" width="20px" alt=""></span>
+                                <span class="icon icon-rounded icon-danger"><img
+                                        src="site-assets/images/social-icons/youtube.png" width="20px" alt=""></span>
+                                <span class="icon icon-rounded icon-danger"><img
+                                        src="site-assets/images/social-icons/blogger.webp" width="20px" alt=""></span>
+                                <span class="icon icon-rounded icon-danger"><img
+                                        src="site-assets/images/social-icons/wordpress.png" width="20px" alt=""></span>
+                                <span class="icon icon-rounded icon-danger"><img
+                                        src="site-assets/images/social-icons/Reddit-Icon.png" width="20px"
+                                        alt=""></span>
+                            </td> -->
+                            <td class="text-center border-bottom">
+                                <span class="icon icon-rounded icon-success"><img
+                                    src="assets/images/right-tik.svg" alt=""></span>
+                                <!-- <span class="icon icon-rounded icon-danger"><img
+                                        src="site-assets/images/social-icons/twitter_circle-512.webp" width="20px"
+                                        alt=""></span>
+                                <span class="icon icon-rounded icon-danger"><img
+                                        src="site-assets/images/social-icons/facebook.png" width="20px" alt=""></span>
+                                <span class="icon icon-rounded icon-danger"><img
+                                        src="site-assets/images/social-icons/social-linkedin-circle-512.webp"
+                                        width="20px" alt=""></span>
+                                <span class="icon icon-rounded icon-danger"><img
+                                        src="site-assets/images/social-icons/pintrest.png" width="20px" alt=""></span>
+                                <span class="icon icon-rounded icon-danger"><img
+                                        src="site-assets/images/social-icons/instagram.jpg" width="20px" alt=""></span>
+                                <span class="icon icon-rounded icon-danger"><img
+                                        src="site-assets/images/social-icons/youtube.png" width="20px" alt=""></span>
+                                <span class="icon icon-rounded icon-danger"><img
+                                        src="site-assets/images/social-icons/blogger.webp" width="20px" alt=""></span>
+                                <span class="icon icon-rounded icon-danger"><img
+                                        src="site-assets/images/social-icons/wordpress.png" width="20px" alt=""></span>
+                                <span class="icon icon-rounded icon-danger"><img
+                                        src="site-assets/images/social-icons/Reddit-Icon.png" width="20px"
+                                        alt=""></span> -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row" class="border-bottom">Zapier Integration<span class="ml-1"></span></td>
+                            <td class="text-center border-bottom">
+                                <span class="icon icon-rounded icon-danger"><img src="assets/images/Rectangle-dash.png"
+                                        alt=""></span>
+                            </td>
+                            <!-- <td class="text-center border-bottom">
+
+                                <span class="icon icon-rounded icon-danger"><img
+                                        src="site-assets/images/icon__checked--green.svg" alt=""></span>
+                            </td> -->
+                            <td class="text-center border-bottom">
+                                <span class="icon icon-rounded icon-success"><img
+                                        src="assets/images/right-tik.svg" alt=""></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row" class="border-bottom">Analytics & Insights<span class="ml-1"></span></td>
+                            <td class="text-center border-bottom">
+                                <span class="icon icon-rounded icon-danger"><img src="assets/images/Rectangle-dash.png"
+                                        alt=""></span>
+                            </td>
+                            <!-- <td class="text-center border-bottom">
+                                <span class="icon icon-rounded icon-danger"><img
+                                        src="site-assets/images/icon__checked--green.svg" alt=""></span>
+                            </td> -->
+                            <td class="text-center border-bottom">
+                                <span class="icon icon-rounded icon-success"><img
+                                        src="assets/images/right-tik.svg" alt=""></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row" class="border-bottom">Website Comparison</td>
+                            <td class="text-center border-bottom">
+                                <span class="icon icon-rounded icon-danger"><img src="assets/images/Rectangle-dash.png"
+                                        alt=""></span>
+                            </td>
+                            <!-- <td class="text-center border-bottom">
+                                <span class="icon icon-rounded icon-danger"><img
+                                        src="site-assets/images/icon__checked--green.svg" alt=""></span>
+                            </td> -->
+                            <td class="text-center border-bottom">
+                                <span class="icon icon-rounded icon-success"><img
+                                        src="assets/images/right-tik.svg" alt=""></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row" class="border-bottom">Facebook Posting : Carousel/Slider Post <span
+                                    class="ml-1"></span></td>
+                            <td class="text-center border-bottom">
+                                <span class="icon icon-rounded icon-danger"><img src="assets/images/Rectangle-dash.png"
+                                        alt=""></span>
+                            </td>
+                            <!-- <td class="text-center border-bottom">
+                                <span class="icon icon-rounded icon-danger"><img
+                                        src="site-assets/images/icon__checked--green.svg" alt=""></span>
+                            </td> -->
+                            <td class="text-center border-bottom">
+                                <span class="icon icon-rounded icon-success"><img
+                                        src="assets/images/right-tik.svg" alt=""></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row" class="border-bottom">Hashtag Search<span class="ml-1"></span></td>
+                            <td class="text-center border-bottom">
+                                <span class="icon icon-rounded icon-danger"><img src="assets/images/Rectangle-dash.png"
+                                        alt=""></span>
+                            </td>
+                            <!-- <td class="text-center border-bottom">
+                                <span class="icon icon-rounded icon-danger"><img
+                                        src="site-assets/images/icon__checked--green.svg" alt=""></span>
+                            </td> -->
+                            <td class="text-center border-bottom">
+                                <span class="icon icon-rounded icon-success"><img
+                                        src="assets/images/right-tik.svg" alt=""></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row" class="border-bottom">Email Support<span class="ml-1"></span></td>
+                            <td class="text-center border-bottom">
+                                <span class="icon icon-rounded icon-danger">Community & 7 Day Live Chat</span>
+                            </td>
+                            <!-- <td class="text-center border-bottom">
+                                <span class="icon icon-rounded icon-danger"><img
+                                        src="site-assets/images/icon__checked--green.svg" alt=""></span>
+                            </td> -->
+                            <td class="text-center border-bottom">
+                                <span class="icon icon-rounded icon-danger">Tickets & Live Chat</span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frequently Section -->
+    <section class="py-md-5">
+        <div class="col-md-8 mx-auto">
+            <div class="container py-5">
+                <h2 class="text-center font-weight-bold">Frequently Asked Questions</h2>
+            </div>
+            <div class="accordion" id="accordionExample">
+                <div class="card border-bottom border-top-0 border-left-0 border-right-0">
+                    <div class="card-header bg-transparent" id="headingOne">
+                        <h2 class="mb-0">
+                            <a class="btn btn-link btn-block text-left text-dark" data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Is there a free trial of the paid plans?
+                            </a>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Yes! There is a 14-day free trial. You can simply contact us at <a href="mailto:signup@botsuite.io">signup@botsuite.io</a> & get
+                            your trial credentials and use botsuite without any risk
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-bottom border-top-0 border-left-0 border-right-0">
+                    <div class="card-header bg-transparent" id="headingTwo">
+                        <h2 class="mb-0">
+                            <a class="btn btn-link btn-block text-left collapsed text-dark" data-toggle="collapse"
+                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                What is the benefit of an annual plan?
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            The annual plan allows you to purchase botsuite access at lower rate and you will get
+                            exclusive access to new features added time to time without paying extra.
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-bottom border-top-0 border-left-0 border-right-0">
+                    <div class="card-header bg-transparent" id="headingThree">
+                        <h2 class="mb-0">
+                            <a class="btn btn-link btn-block text-left collapsed text-dark" data-toggle="collapse"
+                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Is my data safe?
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            Yes, your data is safe with us as our platform is GDPR complaint.
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-bottom border-top-0 border-left-0 border-right-0">
+                    <div class="card-header bg-transparent" id="headingFour">
+                        <h2 class="mb-0">
+                            <a class="btn btn-link btn-block text-left collapsed text-dark" data-toggle="collapse"
+                                data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Is there any cancellation fees?
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            No, we don’t charge any cancellation fees. You are free to cancel your subscription anytime.
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-bottom border-top-0 border-left-0 border-right-0">
+                    <div class="card-header bg-transparent" id="headingFive">
+                        <h2 class="mb-0">
+                            <a class="btn btn-link btn-block text-left collapsed text-dark" data-toggle="collapse"
+                                data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Can I create a messenger ecommerce store for any niche?
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            Yes, You can. You can build a restaurant order system via messenger, can build service
+                            booking system, appointment booking system in the messenger itself.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Video Section -->
+  <div class="video-section">
+    <div class="">
+      <div class="col-md-10 m-auto eight-bg">
+        <div class="row">
+          <div class="text-block col-md-6 d-flex flex-column align-items-start">
+            <h1 class="text-white">Explore Botsuite Platform and Features</h1>
+            <p class="mb-3 lead text-white">Powerful alone. Better together. Learn how 20,000+ businesses are using
+              Botsuite as their marketing suite.</p>
+            <div class="d-flex">
+              <div class="btn__primary demo-btn">
+                <div class="eff"></div>
+                <a class="text-white" href="https://app.botsuite.io"> Get Started Free </a>
+              </div>
+              <!-- <div class="btn__secondary ml-3">
+                <div class="eff"></div>
+                <a href="#"> Get Free Trial </a>
+              </div> -->
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="video-block">
+              <img class="" src="https://segment.com/site-assets/images/img__call-to-action.svg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- #end video section -->
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="layout-width">
+      <div class="">
+        <img src="assets/images/logo.png" class="footer-logo">
+      </div>
+      <div class="row footer-content">
+        <div class="p-4 col-md-3">
+          <h5 class="mb-4 font-wight-bold">Product</h5>
+          <ul class="list-unstyled">
+            <li class="nav-item">
+              <a href="features" class="footer-nav-link">Features</a>
+            </li>
+            <li class="nav-item">
+              <a href="pricing" class="footer-nav-link">Pricing</a> <br>
+            </li>
+            <li class="nav-item">
+              <a href="gdpr" class="footer-nav-link">GDPR</a> <br>
+            </li>
+          </ul>
+        </div>
+        <div class="p-4 col-md-3">
+          <h5 class="mb-4 font-wight-bold">Company</h5>
+          <ul class="list-unstyled">
+            <li class="nav-item">
+              <a href="about" class="footer-nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="career" class="footer-nav-link">Career</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://app.botsuite.io/blog" class="footer-nav-link">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="p-4 col-md-3">
+          <h5 class="mb-4">Support</h5>
+          <ul class="list-unstyled">
+            <li class="nav-item">
+              <a href="https://app.botsuite.io/" class="footer-nav-link">Submit Ticket</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://www.facebook.com/groups/729054524620239" class="footer-nav-link">Facebook Community</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact" class="footer-nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="p-4 col-md-3">
+          <h5 class="mb-4">Resources</h5>
+          <ul class="list-unstyled">
+            <li class="nav-item">
+              <a href="terms-of-use" class="footer-nav-link">Terms & Conditions</a>
+            </li>
+            <li class="nav-item">
+              <a href="privacy-policy" class="footer-nav-link">Privacy Policy</a>
+            </li>
+            <li class="nav-item">
+              <a href="legal-and-security" class="footer-nav-link">Legal & Security</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 mt-3 d-flex">
+          <p class="text-start copyright-text">© Copyright 2020 BotSuite. Appernity Technologies Pvt Ltd - All rights reserved. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
